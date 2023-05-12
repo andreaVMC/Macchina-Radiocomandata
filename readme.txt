@@ -15,3 +15,28 @@ data: 31/03/2023
     pensa di adottare un Arduino UNO R3, più semplice da adoperare rispetto all' Arduino nano; per quanto riguarda l'apparato del movimento della macchina l' idea attuale
     è quella di utilizzare due motorini elettrici a 5V per le ruote posteriori, e 2 servo motori per le ruote anteriori, cosi da avere una trazione posteriore e possibilità
     di sterzata sull'apparecchio. [utilizzo di un circuito stampato con NFC, per l' utilizzio di una chiave elettronica per sbloccare la macchina].
+
+
+
+
+
+data: 11/05/2023
+	
+
+Primo prototipo macchina ferari con implementazione di trazione posteriore, i riscontri sono stati:
+Potenza della power banck con 5 Volt sufficiente solo per due motori, ma il peso della vettura complessiva impegnato su solo due motori è troppo alto.
+
+CONSIDERAZIONI
+Rimuovere i due servo motori per il controllo sterzo e usiamo altri due motori in lineare per gestire il peso. TOTALE = 4 motori;
+La sterzata del veicolo avviene fermando due dei quattro motori.
+
+
+
+data: 12/05/2023
+
+Tentativo fallito di retromarcia con tentativo di implementazione dell'integrato L293 necessario per invertire la corrente;
+abbondato tentativo di retromarcia per via dell'insufficiente potenza dei motori.
+Test dell'uso di transistor per regolare il passaggio di corrente indipendente tra zona motori destra e sinista --> TENTATIVO RIUSCITO con ottimi risultati;
+TODO: aggiornamento programma ARDUINO
+
+
