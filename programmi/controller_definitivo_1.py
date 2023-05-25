@@ -3,7 +3,7 @@ import serial
 from tkinter import *
 import sys
 
-ser = serial.Serial("COM3", 9600, timeout=1)
+ser = serial.Serial("COM4", 9600, timeout=1)
 
 window = Tk()
 
